@@ -6,10 +6,12 @@ import re
 #200 -> meta tags !
 #300 -> old tags !
 #400 -> resposnive?
+#1000 -> info
 
 class Scanner:
 
     def __init__(self, address):
+        self.url = address
         self.issues = []
         self.keywords = []
         self.source = urllib.request.urlopen(address).read()
@@ -88,13 +90,29 @@ class Scanner:
             self.issues.append(203)
 
 
+        # check if canonical
+        canonical = self.soup.find("link", {"rel": "canonical"})
+        hasCanonical = bool(canonical)
+        if(hasCanonical):
+            repr = canonical['href']
+            if(repr == self.url):
+                self.issues.append(1000)
+            else:
+                self.issues.append(1001)
+        else:
+            self.issues.append(204)
+
+
+
+
+
 
     def isResponsive(self):
         pass
 
 
 
-meta = Scanner("https://www.eactive.pl/blog-o-seo/spor-o-meta-keywords-czy-wciaz-sa-potrzebne/")
+meta = Scanner("http://server735002.nazwa.pl/")
 if(len(meta.issues) > 0):
     print(meta.issues)
 else:
