@@ -1,4 +1,5 @@
 const output_codes = {
+	"100": "No title?",
 	"101": "Page title is too long",
 	"102": "No head tag",
 	"103": "No body tag",

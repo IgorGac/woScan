@@ -14,7 +14,7 @@ input, button{
 }
 .holder{
 	width: 100vw;
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -37,10 +37,41 @@ input, button{
 }
 #app{
 	font-family: Raleway;
-	max-width: 80%;
+	max-width: 70%;
 	margin: auto;
+	display: none;
+	align-content: center;
+	justify-content: center;
+	visibility: none;
+	border-top: 2px solid #000;
+	padding-top: 40px;
 }
 ul{
 	list-style-type:none;
 	padding: 0;
 }
+.app-col{
+	width: 50%;]
+	display: inline-block;
+}
+canvas{
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin: auto;
+
+}
+.chart-desc{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+.chart-color-desc{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	
+}
+.info-chart{background: #4688e3}
+.warning-chart{background: #e33529;margin-left: 20px;}

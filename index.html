@@ -18,20 +18,33 @@
 		</div>
 	</div>
 		<div id="app">
-			<div class='info'>
-				<h2 class="info-title">Info</h2>
-				<ul id="infoContainer">
-				</ul>
+			<div class="app-col">
+				<div class='info'>
+					<h2 class="info-title">Info</h2>
+					<ul id="infoContainer">
+					</ul>
+						
+				</div>
+				<div class='warnings'>
+				<h2 class="info-title">Warnings</h2>
+					<ul id="warningContainer">
 					
+					</ul>
+					
+				</div>
 			</div>
-			<div class='warnings'>
-			<h2 class="info-title">Warnings</h2>
-				<ul id="warningContainer">
-				
-				</ul>
-				
+			<div class="app-col">
+				<div class="chart-container">
+					<canvas id="resultChart"></canvas>
+					<div class="chart-desc">
+						<span class="chart-color-desc info-chart"></span>
+						<span class="chart-label">Info</span>
+						<span class="chart-color-desc warning-chart"></span> 
+						<span class="chart-label">Warnings</span>
+					</div>
+				</div>
 			</div>
-		
+			
 		</div>
 		<script src="./codes.js"></script>
 		<script src='./runScan.js' ></script>
