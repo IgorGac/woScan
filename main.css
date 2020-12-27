@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	
+}
+input, button{
+	display: block;
+	margin: 10px auto 40px auto;
+	font-family: Raleway;
+}
+.container{
+	
+	text-align: center;
+	font-family: Raleway;
+}
+.holder{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#urlInput{
+	width: 30vw;
+	height: 30px;
+	border: 1px solid #000;
+}
+.main-title{
+	font-size: 3em;
+}
+#scanButton{
+	padding: 5px 30px;
+	border: 0;
+	background-color: #4688e3;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 5px;
+}
+#app{
+	font-family: Raleway;
+}
